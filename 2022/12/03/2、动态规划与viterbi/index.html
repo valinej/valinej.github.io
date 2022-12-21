@@ -18,15 +18,15 @@
   <meta name="author" content="VALINEJ">
   <meta name="keywords" content="">
   
-    <meta name="description" content="还是写中文舒服，不过英语也不能落下假期多写写英语，现在挺忙没空学英语了QAQ 记录一些和blog相关的操作 0.到blog目录  右键git bush here 1、更换主题  搭建blog用的hexo 主题是fluid Hexo Fluid 用户手册 (fluid-dev.github.io) 把要的主题文件夹解压放到theme下，改成方便的文件名在_config.yml拉到最下面找到 them">
+    <meta name="description" content="题外话 接触到这个算法是在随机信号课的大作业上，据说这个算法在通信中有较多的应用，值得一学，本身也很简单。    分析的时候用到了图论，有一说一这个东西在刚学的时候感觉是1t4，   现在图论开始有点感觉了 btw为啥这b东西后面git不上去了QAQ 正文开始 我们举一个简单的例子 在一个4x4的棋盘上，棋子要从左上角（0，0）移动到左下角（3，3） 缺个图 4x4棋盘  （1）后效性的与无后效">
 <meta property="og:type" content="article">
-<meta property="og:title" content="blog相关操作">
-<meta property="og:url" content="http://example.com/2022/12/03/1%E3%80%81%E5%85%B3%E4%BA%8Eblog%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E9%98%B2%E6%AD%A2%E5%BF%98%E8%AE%B0/index.html">
+<meta property="og:title" content="动态规划与viterbi">
+<meta property="og:url" content="http://example.com/2022/12/03/2%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%8Eviterbi/index.html">
 <meta property="og:site_name" content="VALINEのBLOG">
-<meta property="og:description" content="还是写中文舒服，不过英语也不能落下假期多写写英语，现在挺忙没空学英语了QAQ 记录一些和blog相关的操作 0.到blog目录  右键git bush here 1、更换主题  搭建blog用的hexo 主题是fluid Hexo Fluid 用户手册 (fluid-dev.github.io) 把要的主题文件夹解压放到theme下，改成方便的文件名在_config.yml拉到最下面找到 them">
+<meta property="og:description" content="题外话 接触到这个算法是在随机信号课的大作业上，据说这个算法在通信中有较多的应用，值得一学，本身也很简单。    分析的时候用到了图论，有一说一这个东西在刚学的时候感觉是1t4，   现在图论开始有点感觉了 btw为啥这b东西后面git不上去了QAQ 正文开始 我们举一个简单的例子 在一个4x4的棋盘上，棋子要从左上角（0，0）移动到左下角（3，3） 缺个图 4x4棋盘  （1）后效性的与无后效">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-12-02T17:14:39.000Z">
-<meta property="article:modified_time" content="2022-12-21T12:16:32.699Z">
+<meta property="article:published_time" content="2022-12-02T17:18:04.000Z">
+<meta property="article:modified_time" content="2022-12-21T11:26:55.185Z">
 <meta property="article:author" content="VALINEJ">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -34,7 +34,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>blog相关操作 - VALINEのBLOG</title>
+  <title>动态规划与viterbi - VALINEのBLOG</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="blog相关操作"></span>
+            <span id="subtitle" data-typed-text="动态规划与viterbi"></span>
           
         </div>
 
@@ -214,7 +214,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-12-03 01:14" pubdate>
+        <time datetime="2022-12-03 01:18" pubdate>
           2022年12月3日 凌晨
         </time>
       </span>
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          1.1k 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          15 分钟
+          10 分钟
         
       </span>
     
@@ -283,7 +283,7 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">blog相关操作</h1>
+            <h1 style="display: none">动态规划与viterbi</h1>
             
               <p class="note note-info">
                 
@@ -296,86 +296,30 @@
             
               <div class="markdown-body">
                 
-                <p>还是写中文舒服，不过英语也不能落下<br>假期多写写英语，现在挺忙没空学英语了QAQ</p>
-<h1>记录一些和blog相关的操作</h1>
-<h2>0.到blog目录</h2>
+                <h1>题外话</h1>
+接触到这个算法是在随机信号课的大作业上，据说这个算法在通信中有较多的应用，值得一学，本身也很简单。  
 
-<p>右键<br>git bush here</p>
-<h2>1、更换主题</h2>
+<p>分析的时候用到了图论，有一说一这个东西在刚学的时候感觉是1t4，  </p>
+<p>现在图论开始有点感觉了</p>
+<p>btw为啥这b东西后面git不上去了QAQ</p>
+<h1>正文开始</h1>
+我们举一个简单的例子
+在一个4x4的棋盘上，棋子要从左上角（0，0）移动到左下角（3，3）
+缺个图 4x4棋盘
 
-<p>搭建blog用的hexo</p>
-<p>主题是fluid <a target="_blank" rel="noopener" href="https://fluid-dev.github.io/hexo-fluid-docs/">Hexo Fluid 用户手册 (fluid-dev.github.io)</a></p>
-<p>把要的主题文件夹解压放到theme下，改成方便的文件名<br>在_config.yml拉到最下面找到 theme 属性，修改成对应的文件名<br>（language改为zh-CN好像就支持中文了）（有些项目和这个不一样XD<br>当前主题<a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">https://github.com/fluid-dev/hexo-theme-fluid</a></p>
-<h2>2、通常冒号后面要有个空格不然会报错</h2>
+<h2>（1）后效性的与无后效</h2>
 
-<p>例如：YAMLException: bad indentation of a mapping entry (1:21)</p>
-<h2>3、重新部署</h2>
+<p>思考以下两个情况：<br>1、	棋子可向上下左右方向移动<br>2、	棋子可向上下左右方向移动，但不能移动到曾经经过的位置。<br>在情况1中，棋子移动以后，上一步决策的不会对下一步产生影响（不考虑边界的情况下），即无后效性；情况2中，棋子下一步不能选择之前经过的位置，即过去对未来产生了影响，故为后效性<br>马尔可夫不仅为我们提供了一个高效的数学工具，其中无后效性的数学思想也同为重要。</p>
+<h2>（2）动态规划</h2>
+我们将（2）中的例子稍作变换：有一个M*N的棋盘，棋子要从左上角（0，0）移动到右下角（M,N）。规定棋子只能向左或相下移动，求一共有多少条路径。
+我们将棋盘定义为一个M*N的二维数组Q，数组中的值表示到达该点的路径之和，这一点我个人认为是最为关键。
 
-<p>hexo clean<br>hexo g（enerate）<br>hexo d<br>部署不上去多试几次就行（大概</p>
-<p>btw本地查看 hexo s(erves)</p>
-<h2>4、新发布文章</h2>
+<p>另一个关键在于找到数组之间的关系。<br>首先可以确定一些简单的初始值来使我们的分析更为直观。本题中，第一行与第一列(Q[0,]和Q[,0])显然为1。<br>由于棋子只能向下或向右移动，故Q[I,J]&#x3D;Q[I-1,J]+Q[I,J-1]。<br>到此我们的算法就可以很简单的实现了（两个for就可以啦）。</p>
+<p>这个问题还可以进一步推广，如加入一些障碍物，求解最短路径，分析方法与此题类似。<br>一般来说，能够采用动态规划方法求解的问题，必须满足最优化原理和无后效性原则：<br>1、动态规划的最优化原理，即子问题的局部最优将导致整个问题的全局最优。在最短路径问题中，A到E的最优路径上的任一点到终点E的路径，也必然是该点到终点E的条最优路径，即整体优化可以分解为若干个局部优化。<br>2、动态规划的无后效性原则，当前的状态是此前历史的一个完整的总结，此前的历史只能通过当前的状态去影响过程未来的演变。<br>由此可见，对于不能划分阶段的问题或不符合最优化原理的，不能用动态规划的方法来求解。<br>为什么动态规划比搜索要快？就是因为动态规划的最优性原理和无后效性。在动态规划推导出一个阶段的结果时，会将其保留，再次遇到这个结果直接调用。</p>
+<h2>(3)从图论到viterbi</h2>
 
-<p>hexo new newpapername  </p>
-<p>然后在source&#x2F;_post中打开markdown文件，就可以开始编辑了。  </p>
-<p>写完后保存，再最后再次重新部署<br>（有时间得学学markdown官方教程(<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/line-breaks.html">https://markdown.com.cn/basic-syntax/line-breaks.html</a>)</p>
-<h2>5、删除文章</h2>
-现在source删掉对应文章
-#然后删掉deployed文件夹（似乎现在并不需要
-最后重新部署
+<p>西八，这里缺了好多图<br>这里编程的一个关键在于，我们分析过程中可以发现<br>在连续三层求出最短路径后，都有唯一确定对应的值<br>欸，从这个角度是不是又可以看作是两层了，再次重复即可，那么在编程时，关键就是<br>抓住这个“看作两层”的思想来找到数学关系，ez</p>
 
-<p>​	如果删除时报错，可以试试下面的办法</p>
-<p>​	创建.txt文件</p>
-<pre><code class="hljs">输入
-DEL /F /A /Q \\?\%1
-RD /S /Q \\?\%1
-</code></pre>
-<p>​	随后改为.bat文件</p>
-<p>把文件拖过来就可以删除了，ez，over</p>
-<h2>6、修改主题内容</h2>
-
-<p>这里使用的主题是fluid</p>
-<h3>(1)修改图片</h3>
-
-<p>详细可以修改的内容见theme1下的config里</p>
-<p>这里需要注意的是，图片应该放到theme1&#x2F;source&#x2F;img下，而不是你的blog文件夹下public&#x2F;image</p>
-<p>这里建议把要改的图片命名为别的，别 偷懒改成default，叫这个的太捏嘛多了</p>
-<p>icon图片似乎不能过大，容易加载不出来，</p>
-<p>放一个图片压缩网站(<a target="_blank" rel="noopener" href="https://docsmall.com/image-compress">https://docsmall.com/image-compress</a>)</p>
-<p>icon制作网站(<a target="_blank" rel="noopener" href="https://www.logosc.cn/logo/favicon)%EF%BC%8C%E8%BF%99%E4%B8%AA%E7%94%9F%E6%88%90%E7%9A%84%E5%A4%9F%E5%B0%8F%E8%BF%98%E6%98%AF%E5%AF%84%E4%BA%86%EF%BC%8C%E7%BB%BC%E4%B8%8A%E6%89%80%E8%BF%B0%E5%B0%B1%E6%98%AF%E4%B8%A4%E4%B8%AA%E9%83%BD%E5%AF%84%E4%BA%86">https://www.logosc.cn/logo/favicon)，这个生成的够小还是寄了，综上所述就是两个都寄了</a></p>
-<p>btw在文章前添加banner一直显示不出来，不过似乎不能一篇文章一个图片，那就摆了罢（悲</p>
-<p>立个flag  自己写一个压缩算法</p>
-<p>再立个flag 自己写一个 生成马赛克图片的算法</p>
-<h3>(2)添加评论区</h3>
-
-<p>a.这里我用的是utterances</p>
-<p>首先要做的是在github上创建一个用于存放评论的repo 例如comments</p>
-<p>随后点击<a target="_blank" rel="noopener" href="https://github.com/apps/utterances%E5%8E%BB%E5%AE%89%E8%A3%85%EF%BC%8C%E9%A1%BA%E7%9D%80%E6%9D%A5%E5%B0%B1%E8%A1%8C%E8%AE%B0%E5%BE%97%E9%80%89comments">https://github.com/apps/utterances去安装，顺着来就行记得选comments</a></p>
-<p>然后会弹出来它的configure页面，没有弹出来也没啥问题，再次点击链接找到configure按键即可</p>
-<p>顺着下去，按找要求的格式再次输入repo</p>
-<p>最后会生成一段代码，不要关闭页面</p>
-<p>b.打开theme的config</p>
-<p>找到对应位置，看它需要什么，对应复制修改即可，多的不用管</p>
-<p>c.坏了</p>
-<p>我发现好像自带了一个</p>
-<p>在1000来行的地方</p>
-<p>XD</p>
-<h3>(3)开启阅读统计</h3>
-
-<p>这个是最简单的，找到config里对应的改成true就行</p>
-<p>它好像预装了busuanzi</p>
-<p>开香槟咯</p>
-<h3>(4)开启网站追踪统计</h3>
-
-<p>这个东西在博客上显示不出来，但是可以帮你统计相关的数据</p>
-<p>config里有放了很多的链接</p>
-<p>我这里用的百度提供的</p>
-<p>老简单了</p>
-<p>登录百度账号后，在网站填写博客url，balabala最后又会有一段代码了，看config里的提示，把后面的码放到下方</p>
-<p>baidu：放这里</p>
-<p>over</p>
-<title>6、修改主题的一些坑<title>
-    （1）更换主题的一些图片
-    更换的图片要放在theme1/source/img里，我第一次弄没找教程自己试着来的，没找到img气急败坏了直接搜文件夹下的.png然后就进了pulbic/img然后怎么提交都不出来
                 
               </div>
             
@@ -392,8 +336,8 @@ RD /S /Q \\?\%1
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>blog相关操作</div>
-      <div>http://example.com/2022/12/03/1、关于blog的一些注意事项（防止忘记/</div>
+      <div>动态规划与viterbi</div>
+      <div>http://example.com/2022/12/03/2、动态规划与viterbi/</div>
     </div>
     <div class="license-meta">
       
@@ -442,9 +386,9 @@ RD /S /Q \\?\%1
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/12/03/2%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%8Eviterbi/" title="动态规划与viterbi">
+                      <a href="/2022/12/21/README/" title="README">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">动态规划与viterbi</span>
+                        <span class="hidden-mobile">README</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -452,8 +396,8 @@ RD /S /Q \\?\%1
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/11/19/0%E3%80%81My-first-blog%20/" title="My first blog(real">
-                        <span class="hidden-mobile">My first blog(real</span>
+                      <a href="/2022/12/03/1%E3%80%81%E5%85%B3%E4%BA%8Eblog%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E9%98%B2%E6%AD%A2%E5%BF%98%E8%AE%B0/" title="blog相关操作">
+                        <span class="hidden-mobile">blog相关操作</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
