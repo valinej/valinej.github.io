@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>3下载视频的一些方法</title>
+    <link href="/2022/12/22/3%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%B9%E6%B3%95/"/>
+    <url>/2022/12/22/3%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%B9%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<h1>这一篇总结一些用成功的下载方法</h1><p>由于版权问题，很多视频都需要付费下载或者不能下载，但网上的视频有些时候总需要下载下来用于学习XD</p><h1>1.you-get </h1><p>这个是一个用python写的项目</p><p>下载过程极其简单，先cd到python下（我电脑cmd里直接输python找不到</p><p>you-get url</p><p>最后会下到python路径下</p><p>安利一个软件 everything，找文件速度比windows文件夹右上角的快多了</p><p>有些时候会因为压缩格式的问题打不开，别慌，这里就不用格式工厂了，用ffmpeg</p><p>cmd里输入 ffmpeg -i 需要修改的文件名 修改后的文件名</p><p>ez</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>README</title>
     <link href="/2022/12/21/README/"/>
     <url>/2022/12/21/README/</url>
