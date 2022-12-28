@@ -4,7 +4,20 @@
   
   
   <entry>
-    <title>3下载视频的一些方法</title>
+    <title>4、折腾chatgpt</title>
+    <link href="/2022/12/28/4%E3%80%81%E6%8A%98%E8%85%BEchatgpt/"/>
+    <url>/2022/12/28/4%E3%80%81%E6%8A%98%E8%85%BEchatgpt/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>3、下载视频的一些方法</title>
     <link href="/2022/12/22/3%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%B9%E6%B3%95/"/>
     <url>/2022/12/22/3%E4%B8%8B%E8%BD%BD%E8%A7%86%E9%A2%91%E7%9A%84%E4%B8%80%E4%BA%9B%E6%96%B9%E6%B3%95/</url>
     
@@ -17,9 +30,9 @@
   
   
   <entry>
-    <title>README</title>
-    <link href="/2022/12/21/README/"/>
-    <url>/2022/12/21/README/</url>
+    <title>置顶test</title>
+    <link href="/2022/12/21/%E7%BD%AE%E9%A1%B6test/"/>
+    <url>/2022/12/21/%E7%BD%AE%E9%A1%B6test/</url>
     
     <content type="html"><![CDATA[<p>sticky: 100表示置顶，0-100越大越靠上</p>]]></content>
     
@@ -30,7 +43,7 @@
   
   
   <entry>
-    <title>动态规划与viterbi</title>
+    <title>2、动态规划与viterbi</title>
     <link href="/2022/12/03/2%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%8Eviterbi/"/>
     <url>/2022/12/03/2%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E4%B8%8Eviterbi/</url>
     
@@ -43,7 +56,7 @@
   
   
   <entry>
-    <title>blog相关操作</title>
+    <title>1、blog相关操作</title>
     <link href="/2022/12/03/1%E3%80%81%E5%85%B3%E4%BA%8Eblog%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E9%98%B2%E6%AD%A2%E5%BF%98%E8%AE%B0/"/>
     <url>/2022/12/03/1%E3%80%81%E5%85%B3%E4%BA%8Eblog%E7%9A%84%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%88%E9%98%B2%E6%AD%A2%E5%BF%98%E8%AE%B0/</url>
     
@@ -56,11 +69,11 @@
   
   
   <entry>
-    <title>My first blog(real</title>
+    <title>0、My first blog(real</title>
     <link href="/2022/11/19/0%E3%80%81My-first-blog%20/"/>
     <url>/2022/11/19/0%E3%80%81My-first-blog%20/</url>
     
-    <content type="html"><![CDATA[<pre><code class="hljs">Its my first time to write my blog. I would like to present some experience of the problems which I solved in the blog-building process.1. The tutorial I followed is this one  https://blog.csdn.net/szjccc/article/details/121830084 which use gitee-page. gitee is a little bit complex so I finally chose github-pages.There is another reference https://blog.csdn.net/yaorongke/article/details/1190891902.The first problem you should focus is the version of nodejs. As usual the older version may have less bugs.But it may cause something you can`t install because it needs the higher version.</code></pre><p>​<br>    3.The github repository name you need to set like this username.github.io , set as public and you would better to add readme as init.<br>     I don not know the reason, but I failed in the first time when i try accessing <a href="https://valinej.github.io/">https://valinej.github.io/</a>. So saaaaaaaaaaaaad.XD.</p><p>​<br>    4. When you open the “ __config.yml “, you will find that the deployment section is missing something.<br>    These missing things need to be completed by yourself</p><pre><code class="hljs">5. WHAT HELL? DAME HOW TO UPDATE MY PREVIOUS BLOGS ????</code></pre>]]></content>
+    <content type="html"><![CDATA[<pre><code class="hljs">Its my first time to write my blog. I would like to present some experience of the problems which I solved in the blog-building process.1. The tutorial I followed is this one  https://blog.csdn.net/szjccc/article/details/121830084 which use gitee-page. gitee is a little bit complex so I finally chose github-pages.There is another reference https://blog.csdn.net/yaorongke/article/details/1190891902.The first problem you should focus is the version of nodejs. As usual the older version may have less bugs.But it may cause something you can`t install because it needs the higher version.</code></pre><p>​<br>​    3.The github repository name you need to set like this username.github.io , set as public and you would better to add readme as init.<br>​     I don not know the reason, but I failed in the first time when i try accessing <a href="https://valinej.github.io/">https://valinej.github.io/</a>. So saaaaaaaaaaaaad.XD.</p><p>​<br>​    4. When you open the “ __config.yml “, you will find that the deployment section is missing something.<br>​    These missing things need to be completed by yourself<br>​    </p><pre><code class="hljs">5. WHAT HELL? DAME HOW TO UPDATE MY PREVIOUS BLOGS ????</code></pre>]]></content>
     
     
     
