@@ -26,7 +26,7 @@
 <meta property="og:description" content="官方文档：NoneBot b站一位大佬的教程：P4 创建你的第一个QQ机器人_哔哩哔哩_bilibili 我的电脑环境： windows11 pycharm2021 python3.9 想试试这个的原因是chatgpt好好玩，而且可以把它放到群里变成猫娘（bushi），是我们学习生活的好帮手，想给宿舍的好兄弟们一起乐呵乐呵 1、nonebot2  第一步 安装nonebot2  ​    pip">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-28T12:05:12.000Z">
-<meta property="article:modified_time" content="2022-12-30T16:51:35.436Z">
+<meta property="article:modified_time" content="2022-12-30T16:59:11.222Z">
 <meta property="article:author" content="VALINEJ">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -354,7 +354,7 @@
 <p>将.env.prod中 的host与port改为与.env.dev中一致</p>
 <p>这里更关键的应该是prod这个文件里的东西</p>
 <p>这里还可以设置其他东西，如超级账户，昵称之类的</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">HOST</span>=<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span><br><span class="hljs-attr">PORT</span>=<span class="hljs-number">11451</span><br><span class="hljs-attr">NICKNAME</span>=[<span class="hljs-string">&quot;kawaiipeach&quot;</span>]<br><span class="hljs-attr">DEBUG</span>=<span class="hljs-literal">true</span>  <span class="hljs-comment"># 开启 debug 模式 **请勿在生产环境开启**</span><br><span class="hljs-attr">SUPERUSERS</span>=[<span class="hljs-string">&quot;114514&quot;</span>]  <span class="hljs-comment"># 配置 NoneBot 超级用户</span><br><span class="hljs-attr">NICKNAME</span>=[<span class="hljs-string">&quot;kawaiipeach&quot;</span>, <span class="hljs-string">&quot;bot&quot;</span>]  <span class="hljs-comment"># 配置机器人的昵称，据说没啥用</span><br><span class="hljs-attr">COMMAND_START</span>=[<span class="hljs-string">&quot;/&quot;</span>, <span class="hljs-string">&quot;&quot;</span>]  <span class="hljs-comment"># 配置命令起始字符</span><br><span class="hljs-attr">COMMAND_SEP</span>=[<span class="hljs-string">&quot;.&quot;</span>]  <span class="hljs-comment"># 配置命令分割字符</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">HOST</span>=<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span><br><span class="hljs-attr">PORT</span>=<span class="hljs-number">11451</span><br><span class="hljs-attr">DEBUG</span>=<span class="hljs-literal">true</span>  <span class="hljs-comment"># 开启 debug 模式 **请勿在生产环境开启**</span><br><span class="hljs-attr">SUPERUSERS</span>=[<span class="hljs-string">&quot;114514&quot;</span>]  <span class="hljs-comment"># 配置 NoneBot 超级用户</span><br><span class="hljs-attr">NICKNAME</span>=[<span class="hljs-string">&quot;bot&quot;</span>]  <span class="hljs-comment"># 配置机器人的昵称，据说没啥用</span><br><span class="hljs-attr">COMMAND_START</span>=[<span class="hljs-string">&quot;/&quot;</span>, <span class="hljs-string">&quot;&quot;</span>]  <span class="hljs-comment"># 配置命令起始字符</span><br><span class="hljs-attr">COMMAND_SEP</span>=[<span class="hljs-string">&quot;.&quot;</span>]  <span class="hljs-comment"># 配置命令分割字符</span><br></code></pre></td></tr></table></figure>
 
 <p>​	</p>
 <h1>2、go-cphttp</h1>
@@ -414,7 +414,7 @@
 <p>让其他人给这个账号发一个&#x2F;echo kawaii peach，可以在qq中看到下述场景</p>
 <p>​                                                                              &#x2F;echo kawaii peach :工具人</p>
 <p>（cphttp登录账号的id）:kawaii peach</p>
-<h2>4、安装插件</h2>
+<h1>4、安装插件</h1>
 
 <p>现在是23：51了，又想给hxd们炫耀一下，又困了 怎么办，整“个人生重开”给xdm玩一玩</p>
 <p>去到官网插件商城，下载安装（复制后到terminal里粘贴回车运行）对应插件，可以在右上角点击GitHub的猫猫头进去看详细内容</p>
@@ -427,19 +427,19 @@
 <p>加入</p>
 <figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">nonebot.load<span class="hljs-constructor">_plugin(<span class="hljs-string">&quot;nonebot_plugin_remake&quot;</span>)</span><br></code></pre></td></tr></table></figure>
 
-<p>然后又寄了XD，</p>
+<p>然后又寄了XD，（当然这里贴出来的是没问题的，寄了只是我当时寄了）</p>
 <h3>第一次报错</h3> 在安装插件的时候，报错说没有config，查了查资料，有人说是没有nbcil
 
 <p>然后我在qq群里试了一下发现用不了</p>
 <p>于是又重新配置了一遍，装的时候才发现原理我就是用的nbcil安装的nonebot2。</p>
 <p>一看环境，这插件不已经早在里面了吗nnd</p>
 <p>于是我pip uninstall重新装</p>
-<p>这次安装我直接用的pip，效果好的很，但实际还是不行</p>
+<p>这次安装我直接用的pip，效果好的很，但实际测试发现还是不行</p>
 <h3>第二个报错（其实也没报自己发现的）</h3>
 
 <p>在上面的测试之后，我有预感是由于我的调用不对，于是我重新翻看视频，发现我错写成了这个</p>
 <p>nonebot.load_plugins(“nonebot-plugin-remake”)</p>
-<p>多了个s，其实也不能全怪我，因为自动补全出来就是这个 -.-</p>
+<p>多了个s，其实也不能全怪我，因为自动补全出来就是这个 QAQ</p>
 <h3>第三个报错</h3>
 
 <p>再run，又报错no module named “nonebot-plugin-remake”</p>
