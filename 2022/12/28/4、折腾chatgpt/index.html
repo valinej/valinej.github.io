@@ -18,15 +18,15 @@
   <meta name="author" content="VALINEJ">
   <meta name="keywords" content="">
   
-    <meta name="description" content="valineJのBLOG">
+    <meta name="description" content="官方文档：NoneBot b站一位大佬的教程：P4 创建你的第一个QQ机器人_哔哩哔哩_bilibili 我的电脑环境： windows11 pycharm2021 python3.9 想试试这个的原因是chatgpt好好玩，而且可以把它放到群里变成猫娘（bushi），是我们学习生活的好帮手，想给宿舍的好兄弟们一起乐呵乐呵 1、nonebot2  第一步 安装nonebot2  ​    pip">
 <meta property="og:type" content="article">
-<meta property="og:title" content="4、折腾chatgpt">
+<meta property="og:title" content="4、扣扣机器人">
 <meta property="og:url" content="http://example.com/2022/12/28/4%E3%80%81%E6%8A%98%E8%85%BEchatgpt/index.html">
 <meta property="og:site_name" content="VALINEのBLOG">
-<meta property="og:description" content="valineJのBLOG">
+<meta property="og:description" content="官方文档：NoneBot b站一位大佬的教程：P4 创建你的第一个QQ机器人_哔哩哔哩_bilibili 我的电脑环境： windows11 pycharm2021 python3.9 想试试这个的原因是chatgpt好好玩，而且可以把它放到群里变成猫娘（bushi），是我们学习生活的好帮手，想给宿舍的好兄弟们一起乐呵乐呵 1、nonebot2  第一步 安装nonebot2  ​    pip">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-12-28T12:05:12.000Z">
-<meta property="article:modified_time" content="2022-12-28T12:05:12.168Z">
+<meta property="article:modified_time" content="2022-12-30T16:51:35.436Z">
 <meta property="article:author" content="VALINEJ">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -34,7 +34,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>4、折腾chatgpt - VALINEのBLOG</title>
+  <title>4、扣扣机器人 - VALINEのBLOG</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="4、折腾chatgpt"></span>
+            <span id="subtitle" data-typed-text="4、扣扣机器人"></span>
           
         </div>
 
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          3.7k 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          1 分钟
+          31 分钟
         
       </span>
     
@@ -283,12 +283,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">4、折腾chatgpt</h1>
+            <h1 style="display: none">4、扣扣机器人</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2022年12月28日 晚上
+                    本文最后更新于：2022年12月31日 凌晨
                   
                 
               </p>
@@ -296,7 +296,160 @@
             
               <div class="markdown-body">
                 
-                
+                <p>官方文档：<a target="_blank" rel="noopener" href="https://v2.nonebot.dev/">NoneBot</a></p>
+<p>b站一位大佬的教程：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1aZ4y1f7e2?p=5&vd_source=32fa29359a5600cf208ad02a74abc1f6">P4 创建你的第一个QQ机器人_哔哩哔哩_bilibili</a></p>
+<p>我的电脑环境：</p>
+<p>windows11</p>
+<p>pycharm2021</p>
+<p>python3.9</p>
+<p>想试试这个的原因是chatgpt好好玩，而且可以把它放到群里变成猫娘（bushi），是我们学习生活的好帮手，想给宿舍的好兄弟们一起乐呵乐呵</p>
+<h1>1、nonebot2</h1>
+
+<h2>第一步 安装nonebot2</h2>
+
+<p>​    <code>pip install nb-cli</code></p>
+<h2>第二步  创建项目</h2>
+
+<p><code>nb create</code></p>
+<p>​	然后就寄了</p>
+<p>报错如下：</p>
+<blockquote>
+<p>An error occurred while requesting <a target="_blank" rel="noopener" href="https://v2.nonebot.dev/adapters.json">https://v2.nonebot.dev/adapters.json</a>.</p>
+<p>An error occurred while requesting <a target="_blank" rel="noopener" href="https://fastly.jsdelivr.net/gh/nonebot/nonebot2/website/static/adapters.json">https://fastly.jsdelivr.net/gh/nonebot/nonebot2/website/static/adapters.json</a>.</p>
+<p>RuntimeError: Failed to get adapter list.</p>
+</blockquote>
+<p>​		上网查找一下，原来是有铸币开着学校的代理</p>
+<p>随后顺着配置一下，这里就选一个adapter onebot v11以防止奇奇怪怪的报错</p>
+<p><code>Successfully installed </code>完成安装</p>
+<p>p.s：此处folder选择了src，另外后面选echo（不知道为啥）以及adapter那里选onebotv11(很重要，我之前错选了qq频道，然后就寄了后面会看到)，记得要用空格选中（</p>
+<p>随后会自动生成</p>
+<p>我的项目是创建在D：FILE\bot下，这里设置项目名称为kawaiipeach</p>
+<p>目录如下：</p>
+<p>D：FILE\bot\kawaiipeach</p>
+<p>–src</p>
+<p>—.env</p>
+<p>—.env.dev</p>
+<p>—.env.prod</p>
+<p>— .gitignore</p>
+<p>—bot.py</p>
+<p>—docker-compose.yml</p>
+<p>—Dockerfle</p>
+<p>—pyprogect.toml</p>
+<p>—Readme.md</p>
+<h2>第三步 项目配置</h2>
+
+<p>这里我们的bot.py，.env,使用默认</p>
+<p>关于.env官网中有这样的介绍</p>
+<blockquote>
+<p>NoneBot 在启动时将会从系统环境变量或者 <code>.env</code> 文件中寻找变量 <code>ENVIRONMENT</code>（大小写不敏感），默认值为 <code>prod</code>。<br>这将引导 NoneBot 从系统环境变量或者 <code>.env.&#123;ENVIRONMENT&#125;</code> 文件中进一步加载具体配置。</p>
+</blockquote>
+<h3>配置.env</h3>
+
+<p>这里environment&#x3D;dev（prod），表示从哪一个获取环境，跟着b站大佬的教程选了prod</p>
+<h3>配置.env.dev</h3>
+
+<p>设置  .env.dev中的端口号PORT&#x3D;11451（默认是8080，不修改的话可能会产生端口占用的情况),HOST默认为127.0.0.1，目的还是防止奇怪的报错，毕竟不是很熟悉</p>
+<h3>配置.env.prod</h3>
+
+<p>将.env.prod中 的host与port改为与.env.dev中一致</p>
+<p>这里更关键的应该是prod这个文件里的东西</p>
+<p>这里还可以设置其他东西，如超级账户，昵称之类的</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">HOST</span>=<span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span><br><span class="hljs-attr">PORT</span>=<span class="hljs-number">11451</span><br><span class="hljs-attr">NICKNAME</span>=[<span class="hljs-string">&quot;kawaiipeach&quot;</span>]<br><span class="hljs-attr">DEBUG</span>=<span class="hljs-literal">true</span>  <span class="hljs-comment"># 开启 debug 模式 **请勿在生产环境开启**</span><br><span class="hljs-attr">SUPERUSERS</span>=[<span class="hljs-string">&quot;114514&quot;</span>]  <span class="hljs-comment"># 配置 NoneBot 超级用户</span><br><span class="hljs-attr">NICKNAME</span>=[<span class="hljs-string">&quot;kawaiipeach&quot;</span>, <span class="hljs-string">&quot;bot&quot;</span>]  <span class="hljs-comment"># 配置机器人的昵称，据说没啥用</span><br><span class="hljs-attr">COMMAND_START</span>=[<span class="hljs-string">&quot;/&quot;</span>, <span class="hljs-string">&quot;&quot;</span>]  <span class="hljs-comment"># 配置命令起始字符</span><br><span class="hljs-attr">COMMAND_SEP</span>=[<span class="hljs-string">&quot;.&quot;</span>]  <span class="hljs-comment"># 配置命令分割字符</span><br></code></pre></td></tr></table></figure>
+
+<p>​	</p>
+<h1>2、go-cphttp</h1>
+
+<h2>第一步 </h2>
+
+<p><a target="_blank" rel="noopener" href="https://github.com/Mrs4s/go-cqhttp/releases">Releases · Mrs4s&#x2F;go-cqhttp (github.com)</a></p>
+<p>去到这里，下载 go-cqhttp_windows_amd64.exe 这一个文件，找不到就点击showall</p>
+<p>这里我把它放到了bot下</p>
+<p>打开windows自带的PowerShell</p>
+<p><code>cd D:\FILE\bot</p>
+<p><code>.\go-cqhttp_windows_amd64.exe</code></p>
+<p>输入3选择“反向 websocket通信”，回车</p>
+<p>随后会自动生成配置文件config.yml</p>
+<h2>第二步 修改config文件进行信息配置</h2>
+
+<p>打开生成好的config.yml</p>
+<p>修改qq账号，不填密码也没有关系，一会儿扫码登录</p>
+<p>修改<code>universal</code>为</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">ws:<span class="hljs-regexp">//</span><span class="hljs-number">127.0</span>.<span class="hljs-number">0.1</span>:<span class="hljs-number">11451</span><span class="hljs-regexp">/onebot/</span>v11/ws<br>p.s这里好像比较重要的是host与post，夹在中间的onebot/v11这个还看到有人写cpHTTP的<br></code></pre></td></tr></table></figure>
+
+<p>与HOST 和 POST保持一致</p>
+<h2>第三步 重新运行</h2>
+
+<p>这里我直接双击exe然后说，八行</p>
+<p>but可以生成一个安全的balabalabala，一路下去，最终可以看到一个.bat，点击，成功打开，扫码登录</p>
+<p>登录成功后还会生成一个token文件，据说后期如果登不上去了可以删掉这个再试试</p>
+<p>cphttp本质是一个没有界面的QQ客户端，我们要做的就是bot——cphttp——qq服务器。。。。</p>
+<h1>3、第一次运行nonebot2</h1>
+
+<p>运行bot.py</p>
+<hr>
+<p>这一段是踩坑的部分</p>
+<p>然后不出意料的又报错了，如下</p>
+<blockquote>
+<p>RuntimeError: Current driver ~fastapi doesn’t support forward connections!QQ Guild Adapter need a ForwardDriver to work.</p>
+</blockquote>
+<p>看来我们需要将驱动器改为<code>ForwardDriver</code>,但是具体要怎么搞捏</p>
+<p>先尝试一下安装补丁看看，<a target="_blank" rel="noopener" href="https://v2.nonebot.dev/store">NoneBot</a></p>
+<p>安装“go-cphttp频道支持适配补丁”，未果</p>
+<p>看官方文档，驱动器分为两种</p>
+<ul>
+<li><code>ForwardDriver</code>：即客户端类型驱动器，多用于使用 <code>HTTP </code>轮询，<code>WebSocket </code>连接服务器的情形。</li>
+<li><code>ReverseDriver</code>：即服务端类型驱动器，多用于使用 <code>WebHook </code>情形。</li>
+</ul>
+<p>其中 <code>ReverseDriver</code> 可以配合 <code>ForwardDriver</code> 一起使用，即可以同时使用客户端功能和服务端功能。</p>
+<p>默认的驱动器是<code>FastAPI</code>,这是一个<code>ReverseDriver</code>，而符合我们要求的官方文档里给出了<code>HTTPX</code>,<code>websockets</code>，<code>AIOHTTP</code>，老实说不是很懂，问问<code>chatgpt</code>，让我们修改配置文件，感觉很奇怪，因为我们在cphttp里明明选择的是“反向 websocket通信”</p>
+<p>试试chatgpt的说法，不太对的感觉</p>
+<p>看看报错这一行<code>driver.register_adapter(QQ_频道Adapter)</code></p>
+<p>右键 go to declaration or usage，感觉看不出什么来QAQ</p>
+<p>发动人脉试试。。。。。。暂时还没回我</p>
+<p>最后发现是前面的adapt错选了 qq频道</p>
+<hr>
+<hr>
+<p>成功运行</p>
+<p>这时我们可以看到在pycharm的terminal里开始可以收到东西了（这里cphttp已经登上并运行着）。</p>
+<p>让其他人给这个账号发一个&#x2F;echo kawaii peach，可以在qq中看到下述场景</p>
+<p>​                                                                              &#x2F;echo kawaii peach :工具人</p>
+<p>（cphttp登录账号的id）:kawaii peach</p>
+<h2>4、安装插件</h2>
+
+<p>现在是23：51了，又想给hxd们炫耀一下，又困了 怎么办，整“个人生重开”给xdm玩一玩</p>
+<p>去到官网插件商城，下载安装（复制后到terminal里粘贴回车运行）对应插件，可以在右上角点击GitHub的猫猫头进去看详细内容</p>
+<p>注意，插件的名字在作者名字上方</p>
+<p>此处为<code>nonebot-plugin-remake</code></p>
+<p>来到bot.py</p>
+<p>在这一行下方</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">nonebot.load<span class="hljs-constructor">_builtin_plugins(<span class="hljs-string">&quot;echo&quot;</span>)</span><br></code></pre></td></tr></table></figure>
+
+<p>加入</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">nonebot.load<span class="hljs-constructor">_plugin(<span class="hljs-string">&quot;nonebot_plugin_remake&quot;</span>)</span><br></code></pre></td></tr></table></figure>
+
+<p>然后又寄了XD，</p>
+<h3>第一次报错</h3> 在安装插件的时候，报错说没有config，查了查资料，有人说是没有nbcil
+
+<p>然后我在qq群里试了一下发现用不了</p>
+<p>于是又重新配置了一遍，装的时候才发现原理我就是用的nbcil安装的nonebot2。</p>
+<p>一看环境，这插件不已经早在里面了吗nnd</p>
+<p>于是我pip uninstall重新装</p>
+<p>这次安装我直接用的pip，效果好的很，但实际还是不行</p>
+<h3>第二个报错（其实也没报自己发现的）</h3>
+
+<p>在上面的测试之后，我有预感是由于我的调用不对，于是我重新翻看视频，发现我错写成了这个</p>
+<p>nonebot.load_plugins(“nonebot-plugin-remake”)</p>
+<p>多了个s，其实也不能全怪我，因为自动补全出来就是这个 -.-</p>
+<h3>第三个报错</h3>
+
+<p>再run，又报错no module named “nonebot-plugin-remake”</p>
+<p>再定睛一看，这括号里的好像和我pip的有点点不同，把下划线换了，宿舍群测试成功，就是没人理我了QAQ</p>
+<p>这也不能全怪我，因为我还是直接从插件商店copy过来的。</p>
+<p>至此，机器人的安装全部完成，突然发现chatgpt的插件已经有人写了。</p>
+<p>也没人夸夸</p>
+<p>那接下来就读一读插件的代码学习来增加一些知识罢over</p>
+<p>2022&#x2F;12&#x2F;31 00：41</p>
+
                 
               </div>
             
@@ -313,7 +466,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>4、折腾chatgpt</div>
+      <div>4、扣扣机器人</div>
       <div>http://example.com/2022/12/28/4、折腾chatgpt/</div>
     </div>
     <div class="license-meta">
@@ -332,7 +485,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2022年12月28日</div>
+          <div>2022年12月31日</div>
         </div>
       
       
