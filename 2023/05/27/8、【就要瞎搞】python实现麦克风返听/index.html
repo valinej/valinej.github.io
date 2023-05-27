@@ -18,15 +18,15 @@
   <meta name="author" content="VALINEJ">
   <meta name="keywords" content="">
   
-    <meta name="description" content="我的想法是这样：对于单耳失聪人群如果有fps游戏需求，依然需要某一边的声音提供的信息，以左耳失聪为例 我想到的方法很简单  将左声道的声音处理后输出到右声道，在经过一段时间的熟悉后就可以分辨出声音是来自左边的 需要的是   1、获得系统声音信号 2、音频信号处理使其可分辨，于此同时应该尽量简单减少延迟 3、左声道移动到右声道  4、重新输出系统声音信号 准备工作  还是用python 库： 获得系">
+    <meta name="description" content="（2023-5-27好久没写blog了 ） python实现麦克风返听事情是这样的 用麦克风是samson gomic，原本是自带了一个很好用的返听，硬件实现，没什么延迟基本，但是只有先进的3.5mm耳机孔能用，手上也没有合适的耳机了。那不如自己写个咯。 整个项目不是很难，主要是对pyaudio库的一个学习，后续可以搞搞gui，然后把自己搞的一些功能集成在一起,然后就有自己写的一个工具箱咯（好欸）">
 <meta property="og:type" content="article">
-<meta property="og:title" content="6、单耳失聪游戏解决方案">
-<meta property="og:url" content="http://example.com/2023/01/30/6%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91%E5%8D%95%E8%80%B3%E5%A4%B1%E8%81%AA%E6%B8%B8%E6%88%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:title" content="7、python实现麦克风返听">
+<meta property="og:url" content="http://example.com/2023/05/27/8%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91python%E5%AE%9E%E7%8E%B0%E9%BA%A6%E5%85%8B%E9%A3%8E%E8%BF%94%E5%90%AC/index.html">
 <meta property="og:site_name" content="VALINEのBLOG">
-<meta property="og:description" content="我的想法是这样：对于单耳失聪人群如果有fps游戏需求，依然需要某一边的声音提供的信息，以左耳失聪为例 我想到的方法很简单  将左声道的声音处理后输出到右声道，在经过一段时间的熟悉后就可以分辨出声音是来自左边的 需要的是   1、获得系统声音信号 2、音频信号处理使其可分辨，于此同时应该尽量简单减少延迟 3、左声道移动到右声道  4、重新输出系统声音信号 准备工作  还是用python 库： 获得系">
+<meta property="og:description" content="（2023-5-27好久没写blog了 ） python实现麦克风返听事情是这样的 用麦克风是samson gomic，原本是自带了一个很好用的返听，硬件实现，没什么延迟基本，但是只有先进的3.5mm耳机孔能用，手上也没有合适的耳机了。那不如自己写个咯。 整个项目不是很难，主要是对pyaudio库的一个学习，后续可以搞搞gui，然后把自己搞的一些功能集成在一起,然后就有自己写的一个工具箱咯（好欸）">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-30T02:20:36.000Z">
-<meta property="article:modified_time" content="2023-01-30T02:36:11.257Z">
+<meta property="article:published_time" content="2023-05-27T12:17:13.000Z">
+<meta property="article:modified_time" content="2023-05-27T12:28:46.055Z">
 <meta property="article:author" content="VALINEJ">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -34,7 +34,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>6、单耳失聪游戏解决方案 - VALINEのBLOG</title>
+  <title>7、python实现麦克风返听 - VALINEのBLOG</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="6、单耳失聪游戏解决方案"></span>
+            <span id="subtitle" data-typed-text="7、python实现麦克风返听"></span>
           
         </div>
 
@@ -214,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-30 10:20" pubdate>
-          2023年1月30日 上午
+        <time datetime="2023-05-27 20:17" pubdate>
+          2023年5月27日 晚上
         </time>
       </span>
     
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          253 字
+          1.3k 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          3 分钟
+          11 分钟
         
       </span>
     
@@ -283,12 +283,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">6、单耳失聪游戏解决方案</h1>
+            <h1 style="display: none">7、python实现麦克风返听</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年1月30日 上午
+                    本文最后更新于：2023年5月27日 晚上
                   
                 
               </p>
@@ -296,19 +296,41 @@
             
               <div class="markdown-body">
                 
-                <p>我的想法是这样：对于单耳失聪人群如果有fps游戏需求，依然需要某一边的声音提供的信息，以左耳失聪为例</p>
-<p>我想到的方法很简单 </p>
-<p>将左声道的声音处理后输出到右声道，在经过一段时间的熟悉后就可以分辨出声音是来自左边的</p>
-<p>需要的是  </p>
-<p>1、获得系统声音信号</p>
-<p>2、音频信号处理使其可分辨，于此同时应该尽量简单减少延迟</p>
-<p>3、左声道移动到右声道 </p>
-<p>4、重新输出系统声音信号</p>
-<h1>准备工作</h1>
+                <p>（2023-5-27好久没写blog了</p>
+<p>）</p>
+<h1 id="python实现麦克风返听"><a href="#python实现麦克风返听" class="headerlink" title="python实现麦克风返听"></a>python实现麦克风返听</h1><p>事情是这样的</p>
+<p>用麦克风是samson gomic，原本是自带了一个很好用的返听，硬件实现，没什么延迟基本，但是只有先进的3.5mm耳机孔能用，手上也没有合适的耳机了。那不如自己写个咯。</p>
+<p>整个项目不是很难，主要是对<strong>pyaudio</strong>库的一个学习，后续可以搞搞gui，然后把自己搞的一些功能集成在一起,然后就有自己写的一个工具箱咯（好欸）</p>
+<p>返听主要考虑三个方面：延迟，降一点点噪（之后有机会写写人声增强）、音量调节（samson gomic的最大缺点就是接它返听口的时候，返听的声音和电脑声音是在一起的，不能（直接）分开控制）</p>
+<p>后续改进：gui，滤除喷麦，做做音频增强</p>
+<p>代码如下</p>
+<p><code>import pyaudio<br>import numpy as np<br>import matplotlib.pyplot as plt  </p>
+<h1 id="定义参数"><a href="#定义参数" class="headerlink" title="定义参数"></a>定义参数</h1><p>FORMAT = pyaudio.paInt16  # 输入音频的格式为16位整数<br>CHANNELS = 1  # 单声道<br>RATE = 44100  # 采样率为44100Hz<br>CHUNK = 256   # 每个缓冲区的帧数  </p>
+<h1 id="初始化PyAudio"><a href="#初始化PyAudio" class="headerlink" title="初始化PyAudio"></a>初始化PyAudio</h1><p>p = pyaudio.PyAudio()  </p>
+<h1 id="创建一个音量增益系数"><a href="#创建一个音量增益系数" class="headerlink" title="创建一个音量增益系数"></a>创建一个音量增益系数</h1><p>volume_gain = 2.0  # 音量增益倍数  </p>
+<h1 id="打开麦克风进行录制"><a href="#打开麦克风进行录制" class="headerlink" title="打开麦克风进行录制"></a>打开麦克风进行录制</h1><p>stream = p.open(format=FORMAT,<br>                channels=CHANNELS,<br>                rate=RATE,<br>                input=True,<br>                frames_per_buffer=CHUNK)  </p>
+<h1 id="打开扬声器进行播放"><a href="#打开扬声器进行播放" class="headerlink" title="打开扬声器进行播放"></a>打开扬声器进行播放</h1><p>output_stream = p.open(format=FORMAT,<br>                       channels=CHANNELS,<br>                       rate=RATE,<br>                       output=True,<br>                       frames_per_buffer=CHUNK)  </p>
+<h1 id="实时录制和播放音频数据"><a href="#实时录制和播放音频数据" class="headerlink" title="实时录制和播放音频数据"></a>实时录制和播放音频数据</h1><p>print("开始录制和播放...")<br>while True:<br>    # 从麦克风读取音频数据<br>    data = stream.read(CHUNK)  </p>
+<pre><code class="hljs"># 将音频数据转换为NumPy数组  
+audio_array = np.frombuffer(data, dtype=np.int16)  
 
-<p>还是用python</p>
-<p>库：</p>
-<p>获得系统声音speech_recognition（目前不知道这个还能实现什么东西，重新输出估计也挺麻烦的，还会有重音，可能要调用系统api之类的</p>
+# 增大音量  
+amplified_audio = audio_array * volume_gain  
+
+# 将增大音量后的音频数据转换为字节流  
+amplified_data = amplified_audio.astype(np.int16).tobytes()  
+
+# 播放增大音量后的音频数据  
+output_stream.write(amplified_data)  
+
+# 可以在这里对音频数据进行处理或分析  
+# 例如，可以使用matplotlib绘制音频波形图  
+&#39;&#39;&#39;  
+plt.plot(audio_array)    plt.show(block=False)    plt.pause(0.001)    plt.clf()    &#39;&#39;&#39;  
+</code></pre>
+<h1 id="停止录制和播放"><a href="#停止录制和播放" class="headerlink" title="停止录制和播放"></a>停止录制和播放</h1><p>stream.stop_stream()<br>stream.close()<br>output_stream.stop_stream()<br>output_stream.close()  </p>
+<h1 id="关闭PyAudio"><a href="#关闭PyAudio" class="headerlink" title="关闭PyAudio"></a>关闭PyAudio</h1><p>p.terminate()</p>
+</code>
 
                 
               </div>
@@ -326,8 +348,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>6、单耳失聪游戏解决方案</div>
-      <div>http://example.com/2023/01/30/6、【就要瞎搞】单耳失聪游戏解决方案/</div>
+      <div>7、python实现麦克风返听</div>
+      <div>http://example.com/2023/05/27/8、【就要瞎搞】python实现麦克风返听/</div>
     </div>
     <div class="license-meta">
       
@@ -339,13 +361,13 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月30日</div>
+          <div>2023年5月27日</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年1月30日</div>
+          <div>2023年5月27日</div>
         </div>
       
       
@@ -376,18 +398,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/23/7%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91%E8%AF%95%E8%AF%95%E8%87%AA%E5%B7%B1%E5%86%99%E4%B8%80%E4%B8%AA%E5%8F%98%E5%A3%B0%E5%99%A8/" title="试试自己写一个变声器">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">试试自己写一个变声器</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/05/5%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91%E5%9C%86%E5%91%A8%E7%8E%87/" title="5、【就要瞎搞】一、圆周率">
-                        <span class="hidden-mobile">5、【就要瞎搞】一、圆周率</span>
+                      <a href="/2023/03/23/7%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91%E8%AF%95%E8%AF%95%E8%87%AA%E5%B7%B1%E5%86%99%E4%B8%80%E4%B8%AA%E5%8F%98%E5%A3%B0%E5%99%A8/" title="试试自己写一个变声器">
+                        <span class="hidden-mobile">试试自己写一个变声器</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

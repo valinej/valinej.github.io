@@ -18,15 +18,15 @@
   <meta name="author" content="VALINEJ">
   <meta name="keywords" content="">
   
-    <meta name="description" content="我的想法是这样：对于单耳失聪人群如果有fps游戏需求，依然需要某一边的声音提供的信息，以左耳失聪为例 我想到的方法很简单  将左声道的声音处理后输出到右声道，在经过一段时间的熟悉后就可以分辨出声音是来自左边的 需要的是   1、获得系统声音信号 2、音频信号处理使其可分辨，于此同时应该尽量简单减少延迟 3、左声道移动到右声道  4、重新输出系统声音信号 准备工作  还是用python 库： 获得系">
+    <meta name="description" content="没有补齐好难受 之前写markdown的软件到期了，查了一下vscode果然有插件，就是换行得自己打了QAQ,这时候才反应过来自己之前写的一直是html  以下是查找资料时发现的一些东西pydub梅尔频谱音色mokingbird基频和共振峰张雪英.数字语音信号处理及matlab仿真[M].电子工业出版社,2011对音色影响的因素有：基音的周期、基音的频率、共振峰的频率 ok简单查询之后发现几个简单">
 <meta property="og:type" content="article">
-<meta property="og:title" content="6、单耳失聪游戏解决方案">
-<meta property="og:url" content="http://example.com/2023/01/30/6%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91%E5%8D%95%E8%80%B3%E5%A4%B1%E8%81%AA%E6%B8%B8%E6%88%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:title" content="试试自己写一个变声器">
+<meta property="og:url" content="http://example.com/2023/03/23/7%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91%E8%AF%95%E8%AF%95%E8%87%AA%E5%B7%B1%E5%86%99%E4%B8%80%E4%B8%AA%E5%8F%98%E5%A3%B0%E5%99%A8/index.html">
 <meta property="og:site_name" content="VALINEのBLOG">
-<meta property="og:description" content="我的想法是这样：对于单耳失聪人群如果有fps游戏需求，依然需要某一边的声音提供的信息，以左耳失聪为例 我想到的方法很简单  将左声道的声音处理后输出到右声道，在经过一段时间的熟悉后就可以分辨出声音是来自左边的 需要的是   1、获得系统声音信号 2、音频信号处理使其可分辨，于此同时应该尽量简单减少延迟 3、左声道移动到右声道  4、重新输出系统声音信号 准备工作  还是用python 库： 获得系">
+<meta property="og:description" content="没有补齐好难受 之前写markdown的软件到期了，查了一下vscode果然有插件，就是换行得自己打了QAQ,这时候才反应过来自己之前写的一直是html  以下是查找资料时发现的一些东西pydub梅尔频谱音色mokingbird基频和共振峰张雪英.数字语音信号处理及matlab仿真[M].电子工业出版社,2011对音色影响的因素有：基音的周期、基音的频率、共振峰的频率 ok简单查询之后发现几个简单">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-30T02:20:36.000Z">
-<meta property="article:modified_time" content="2023-01-30T02:36:11.257Z">
+<meta property="article:published_time" content="2023-03-23T10:16:42.000Z">
+<meta property="article:modified_time" content="2023-03-27T03:22:09.081Z">
 <meta property="article:author" content="VALINEJ">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -34,7 +34,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>6、单耳失聪游戏解决方案 - VALINEのBLOG</title>
+  <title>试试自己写一个变声器 - VALINEのBLOG</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +203,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="6、单耳失聪游戏解决方案"></span>
+            <span id="subtitle" data-typed-text="试试自己写一个变声器"></span>
           
         </div>
 
@@ -214,8 +214,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-30 10:20" pubdate>
-          2023年1月30日 上午
+        <time datetime="2023-03-23 18:16" pubdate>
+          2023年3月23日 晚上
         </time>
       </span>
     
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          253 字
+          403 字
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          3 分钟
+          4 分钟
         
       </span>
     
@@ -283,12 +283,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">6、单耳失聪游戏解决方案</h1>
+            <h1 style="display: none">试试自己写一个变声器</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年1月30日 上午
+                    本文最后更新于：2023年3月27日 上午
                   
                 
               </p>
@@ -296,19 +296,13 @@
             
               <div class="markdown-body">
                 
-                <p>我的想法是这样：对于单耳失聪人群如果有fps游戏需求，依然需要某一边的声音提供的信息，以左耳失聪为例</p>
-<p>我想到的方法很简单 </p>
-<p>将左声道的声音处理后输出到右声道，在经过一段时间的熟悉后就可以分辨出声音是来自左边的</p>
-<p>需要的是  </p>
-<p>1、获得系统声音信号</p>
-<p>2、音频信号处理使其可分辨，于此同时应该尽量简单减少延迟</p>
-<p>3、左声道移动到右声道 </p>
-<p>4、重新输出系统声音信号</p>
-<h1>准备工作</h1>
+                <h1>没有补齐好难受</h1>
+之前写markdown的软件到期了，查了一下vscode果然有插件，就是换行得自己打了QAQ,这时候才反应过来自己之前写的一直是html
 
-<p>还是用python</p>
-<p>库：</p>
-<p>获得系统声音speech_recognition（目前不知道这个还能实现什么东西，重新输出估计也挺麻烦的，还会有重音，可能要调用系统api之类的</p>
+<p>以下是查找资料时发现的一些东西<br>pydub<br>梅尔频谱<br>音色<br>mokingbird<br>基频和共振峰<br>张雪英.数字语音信号处理及matlab仿真[M].电子工业出版社,2011<br>对音色影响的因素有：<br>基音的周期、基音的频率、共<br>振峰的频率</p>
+<p>ok简单查询之后发现几个简单的方法都是先提高音调，显然这是达不到我们的需求的<br>目前个人的想法：<br>1、从音色这一点入手，查找市面上的变声器机架配置的方法，直接代码写出来；or查查论文</p>
+<p>找了两篇论文都是抓的基音，共振峰，采用LPC倒谱分析方法提取语音参数，然而实际是什么效果就不得而知了，基音都采用巴特沃斯LPF</p>
+<p>有一说一没什么用，还得是知乎大佬<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/110278983">https://zhuanlan.zhihu.com/p/110278983</a><br>太亏贼了，DSP摆烂的我掉下泪来</p>
 
                 
               </div>
@@ -326,8 +320,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>6、单耳失聪游戏解决方案</div>
-      <div>http://example.com/2023/01/30/6、【就要瞎搞】单耳失聪游戏解决方案/</div>
+      <div>试试自己写一个变声器</div>
+      <div>http://example.com/2023/03/23/7、【就要瞎搞】试试自己写一个变声器/</div>
     </div>
     <div class="license-meta">
       
@@ -339,13 +333,13 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月30日</div>
+          <div>2023年3月23日</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年1月30日</div>
+          <div>2023年3月27日</div>
         </div>
       
       
@@ -376,9 +370,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/23/7%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91%E8%AF%95%E8%AF%95%E8%87%AA%E5%B7%B1%E5%86%99%E4%B8%80%E4%B8%AA%E5%8F%98%E5%A3%B0%E5%99%A8/" title="试试自己写一个变声器">
+                      <a href="/2023/05/27/8%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91python%E5%AE%9E%E7%8E%B0%E9%BA%A6%E5%85%8B%E9%A3%8E%E8%BF%94%E5%90%AC/" title="7、python实现麦克风返听">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">试试自己写一个变声器</span>
+                        <span class="hidden-mobile">7、python实现麦克风返听</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -386,8 +380,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/05/5%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91%E5%9C%86%E5%91%A8%E7%8E%87/" title="5、【就要瞎搞】一、圆周率">
-                        <span class="hidden-mobile">5、【就要瞎搞】一、圆周率</span>
+                      <a href="/2023/01/30/6%E3%80%81%E3%80%90%E5%B0%B1%E8%A6%81%E7%9E%8E%E6%90%9E%E3%80%91%E5%8D%95%E8%80%B3%E5%A4%B1%E8%81%AA%E6%B8%B8%E6%88%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" title="6、单耳失聪游戏解决方案">
+                        <span class="hidden-mobile">6、单耳失聪游戏解决方案</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
