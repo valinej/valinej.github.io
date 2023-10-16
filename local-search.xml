@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>ensp相关问题</title>
+    <link href="/2023/10/16/ensp%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/"/>
+    <url>/2023/10/16/ensp%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<p>上一次打开blog还是上一次</p><p>记录一下最近用eNSP做仿真遇到的问题以及解决方法</p><p>1、virtualbox启动不了虚拟机</p><p>据说是dll的问题，在cmd里用<code>sfc /scannow</code>，然后重启，重装软件，再顺便把ensp卸了以防万一</p><p>2、eNSP路由器无限#号</p><p>一般情况多等等，实在等不出来看看防火墙把相关的勾选上</p><p>最近被拒麻了唉，</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>7、python实现麦克风返听</title>
     <link href="/2023/05/27/8%E3%80%81%E3%80%90%E7%9E%8E%E6%90%9E%E5%B7%A5%E5%85%B7%E7%AE%B11%E3%80%91python%E5%AE%9E%E7%8E%B0%E9%BA%A6%E5%85%8B%E9%A3%8E%E8%BF%94%E5%90%AC/"/>
     <url>/2023/05/27/8%E3%80%81%E3%80%90%E7%9E%8E%E6%90%9E%E5%B7%A5%E5%85%B7%E7%AE%B11%E3%80%91python%E5%AE%9E%E7%8E%B0%E9%BA%A6%E5%85%8B%E9%A3%8E%E8%BF%94%E5%90%AC/</url>
